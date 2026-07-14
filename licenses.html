@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Source &amp; Model Licenses — Celvion Stack</title>
+  <meta name="description" content="Open-source software and machine-learning model notices for NAFNet, BasicSR, and Real-ESRGAN components used by Celvion Stack.">
+  <meta name="theme-color" content="#0c0b0a">
+  <meta property="og:title" content="Celvion Stack Open Source &amp; Model Licenses">
+  <meta property="og:url" content="https://guogxy.github.io/celvion-stack/licenses.html">
+  <link rel="canonical" href="https://guogxy.github.io/celvion-stack/licenses.html">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="index.html" data-preserve-language aria-label="Celvion Stack home"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>Celvion Stack</span></a>
+      <div class="nav-links">
+        <a href="index.html#features" class="hide-mobile" data-preserve-language><span data-lang="en">Features</span><span data-lang="zh">功能</span></a>
+        <a href="support.html" data-preserve-language><span data-lang="en">Support</span><span data-lang="zh">支持</span></a>
+        <a href="privacy.html" class="hide-mobile" data-preserve-language><span data-lang="en">Privacy</span><span data-lang="zh">隐私</span></a>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="切换到简体中文">中文</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow" data-lang="en">Attribution</p><p class="eyebrow" data-lang="zh">第三方声明</p>
+        <h1 data-lang="en">Open Source &amp;<br>Model Licenses</h1><h1 data-lang="zh">开源软件与<br>模型许可证</h1>
+        <p data-lang="en">Celvion Stack benefits from open-source software and research. This page preserves the applicable copyright notices, license texts, source links, and model conversion information.</p>
+        <p data-lang="zh">Celvion Stack 受益于开源软件与研究成果。本页保留适用的版权声明、许可证全文、来源链接与模型转换信息。</p>
+        <div class="page-meta"><span class="pill">NAFNet</span><span class="pill">BasicSR</span><span class="pill">Real-ESRGAN</span></div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container reading-column">
+        <div class="callout" data-lang="en"><p>Third-party project and contributor names identify the source of components only. They do not imply endorsement of Celvion Stack. The notices below are also available offline inside the app.</p></div>
+        <div class="callout" data-lang="zh"><p>第三方项目及贡献者名称仅用于说明组件来源，不表示其认可或为 Celvion Stack 背书。以下声明也可在 App 内离线查看。</p></div>
+
+        <div class="license-list">
+          <details class="license-item" open>
+            <summary><span class="license-summary"><span>NAFNet-SIDD Core ML Models</span><span class="license-badge">MIT + Apache-2.0 notices</span></span></summary>
+            <div class="license-body">
+              <div data-lang="en">
+                <p><strong>Purpose:</strong> optional on-device image denoising using NAFNet-SIDD width64 and width32 models. The app prefers width64 for quality and can fall back to width32 or Core Image processing.</p>
+                <p><strong>Source project:</strong> <a class="inline-link" href="https://github.com/megvii-research/NAFNet" target="_blank" rel="noopener">megvii-research/NAFNet</a><br><strong>Copyright:</strong> © 2022 megvii-model<br><strong>Included notices:</strong> NAFNet MIT License and BasicSR Apache License 2.0.</p>
+                <p>The pretrained checkpoints were converted locally to Core ML ML Program format. Input uses a 1 × 3 × 256 × 256 RGB tensor normalized to [0, 1]. The AI path requires iOS 18 or later.</p>
+              </div>
+              <div data-lang="zh">
+                <p><strong>用途：</strong>通过 NAFNet-SIDD width64 与 width32 模型在设备端进行可选图像降噪。App 优先使用质量更高的 width64，并可回退至 width32 或 Core Image 处理。</p>
+                <p><strong>来源项目：</strong><a class="inline-link" href="https://github.com/megvii-research/NAFNet" target="_blank" rel="noopener">megvii-research/NAFNet</a><br><strong>版权：</strong>© 2022 megvii-model<br><strong>随附声明：</strong>NAFNet MIT License 与 BasicSR Apache License 2.0。</p>
+                <p>预训练检查点已在本地转换为 Core ML ML Program 格式，输入为归一化至 [0, 1] 的 1 × 3 × 256 × 256 RGB 张量。AI 路径需要 iOS 18 或更高版本。</p>
+              </div>
+              <p><a class="inline-link" href="legal/NAFNET_NOTICE.md" target="_blank" rel="noopener"><span data-lang="en">Open technical notice</span><span data-lang="zh">打开技术声明</span></a> · <a class="inline-link" href="legal/NAFNET_LICENSE.txt" target="_blank" rel="noopener"><span data-lang="en">Open license text</span><span data-lang="zh">打开许可证原文</span></a></p>
+              <pre data-license-source="legal/NAFNET_LICENSE.txt">Loading license text…</pre>
+            </div>
+          </details>
+
+          <details class="license-item">
+            <summary><span class="license-summary"><span>RealESRGAN-x4plus Core ML Model</span><span class="license-badge">BSD-3-Clause</span></span></summary>
+            <div class="license-body">
+              <div data-lang="en">
+                <p><strong>Purpose:</strong> optional 4× on-device image super-resolution using the RRDBNet RealESRGAN_x4plus architecture.</p>
+                <p><strong>Original project:</strong> <a class="inline-link" href="https://github.com/xinntao/Real-ESRGAN" target="_blank" rel="noopener">xinntao/Real-ESRGAN</a><br><strong>Core ML source:</strong> <a class="inline-link" href="https://huggingface.co/VincentGOURBIN/RealESRGAN-CoreML" target="_blank" rel="noopener">RealESRGAN-CoreML</a><br><strong>Copyright:</strong> © 2021 Xintao Wang<br><strong>License:</strong> BSD 3-Clause.</p>
+                <p>The model accepts a 1 × 3 × 256 × 256 Float16 RGB tensor and produces a 1 × 3 × 1024 × 1024 result. The AI path requires iOS 18 or later and falls back to local non-AI processing when unavailable.</p>
+              </div>
+              <div data-lang="zh">
+                <p><strong>用途：</strong>使用 RRDBNet RealESRGAN_x4plus 架构，在设备端进行可选的 4× 图像超分辨率处理。</p>
+                <p><strong>原始项目：</strong><a class="inline-link" href="https://github.com/xinntao/Real-ESRGAN" target="_blank" rel="noopener">xinntao/Real-ESRGAN</a><br><strong>Core ML 来源：</strong><a class="inline-link" href="https://huggingface.co/VincentGOURBIN/RealESRGAN-CoreML" target="_blank" rel="noopener">RealESRGAN-CoreML</a><br><strong>版权：</strong>© 2021 Xintao Wang<br><strong>许可证：</strong>BSD 3-Clause。</p>
+                <p>模型接收 1 × 3 × 256 × 256 Float16 RGB 张量，并生成 1 × 3 × 1024 × 1024 结果。AI 路径需要 iOS 18 或更高版本；不可用时会回退至本地非 AI 处理。</p>
+              </div>
+              <p><a class="inline-link" href="legal/REAL_ESRGAN_NOTICE.md" target="_blank" rel="noopener"><span data-lang="en">Open technical notice</span><span data-lang="zh">打开技术声明</span></a> · <a class="inline-link" href="legal/REAL_ESRGAN_LICENSE.txt" target="_blank" rel="noopener"><span data-lang="en">Open license text</span><span data-lang="zh">打开许可证原文</span></a></p>
+              <pre data-license-source="legal/REAL_ESRGAN_LICENSE.txt">Loading license text…</pre>
+            </div>
+          </details>
+        </div>
+
+        <h2 data-lang="en">License scope</h2><h2 data-lang="zh">许可证适用范围</h2>
+        <p data-lang="en">These third-party licenses apply to the identified components, not to the Celvion Stack app as a whole. Unless a third-party license expressly states otherwise, Celvion Stack branding, interface, documentation, and original application code remain the property of their respective rights holders.</p>
+        <p data-lang="zh">上述第三方许可证仅适用于所标明的组件，而非整个 Celvion Stack App。除非第三方许可证另有明确规定，Celvion Stack 的品牌、界面、文档与原创应用代码仍归其各自权利人所有。</p>
+
+        <h2 data-lang="en">Questions or corrections</h2><h2 data-lang="zh">问题与更正</h2>
+        <p data-lang="en">If you believe an attribution or license notice needs correction, contact <a class="inline-link" href="mailto:guoqxy@hotmail.com?subject=Celvion%20Stack%20License%20Notice">guoqxy@hotmail.com</a>.</p>
+        <p data-lang="zh">如果你认为某项署名或许可证声明需要更正，请联系 <a class="inline-link" href="mailto:guoqxy@hotmail.com?subject=Celvion%20Stack%20License%20Notice">guoqxy@hotmail.com</a>。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-copy"><div class="footer-brand"><img src="assets/app-icon.png" alt="" width="30" height="30">Celvion Stack</div><p>© 2026 Xinyu Guo. <span data-lang="en">All rights reserved.</span><span data-lang="zh">保留所有权利。</span></p></div>
+      <div class="footer-links"><a href="support.html" data-preserve-language><span data-lang="en">Support</span><span data-lang="zh">支持</span></a><a href="privacy.html" data-preserve-language><span data-lang="en">Privacy</span><span data-lang="zh">隐私政策</span></a><a href="terms.html" data-preserve-language><span data-lang="en">Terms</span><span data-lang="zh">使用条款</span></a><a href="licenses.html" data-preserve-language><span data-lang="en">Licenses</span><span data-lang="zh">开源许可证</span></a></div>
+    </div>
+  </footer>
+</body>
+</html>
