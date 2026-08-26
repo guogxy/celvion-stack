@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open Source &amp; Model Licenses — Celvion Stack</title>
-  <meta name="description" content="Open-source software and machine-learning model notices for NAFNet, BasicSR, and Real-ESRGAN components used by Celvion Stack.">
+  <title>Open Source, Model &amp; Lens Data Licenses — Celvion Stack</title>
+  <meta name="description" content="Open-source software, machine-learning model, and Lensfun-derived optical-correction data notices for Celvion Stack.">
   <meta name="theme-color" content="#0c0b0a">
   <meta property="og:title" content="Celvion Stack Open Source &amp; Model Licenses">
   <meta property="og:url" content="https://guogxy.github.io/celvion-stack/licenses.html">
@@ -34,7 +34,7 @@
         <h1 data-lang="en">Open Source &amp;<br>Model Licenses</h1><h1 data-lang="zh">开源软件与<br>模型许可证</h1>
         <p data-lang="en">Celvion Stack benefits from open-source software and research. This page preserves the applicable copyright notices, license texts, source links, and model conversion information.</p>
         <p data-lang="zh">Celvion Stack 受益于开源软件与研究成果。本页保留适用的版权声明、许可证全文、来源链接与模型转换信息。</p>
-        <div class="page-meta"><span class="pill">NAFNet</span><span class="pill">BasicSR</span><span class="pill">Real-ESRGAN</span></div>
+        <div class="page-meta"><span class="pill">Lensfun</span><span class="pill">NAFNet</span><span class="pill">BasicSR</span><span class="pill">Real-ESRGAN</span></div>
       </div>
     </section>
 
@@ -45,6 +45,23 @@
 
         <div class="license-list">
           <details class="license-item" open>
+            <summary><span class="license-summary"><span>Lensfun Distortion Data</span><span class="license-badge">CC BY-SA 3.0</span></span></summary>
+            <div class="license-body">
+              <div data-lang="en">
+                <p><strong>Purpose:</strong> offline geometric lens-distortion correction for eligible RAW and DNG photos. Celvion Stack uses the database only when a compatible camera and lens profile can be matched, and avoids automatically re-correcting processed JPEG or HEIF photos.</p>
+                <p><strong>Source project:</strong> <a class="inline-link" href="https://github.com/lensfun/lensfun" target="_blank" rel="noopener">Lensfun</a><br><strong>Source revision:</strong> <a class="inline-link" href="https://github.com/lensfun/lensfun/commit/5bfb8d8cb151a3a4068219cfc798f63d0641ff19" target="_blank" rel="noopener"><code>5bfb8d8</code></a><br><strong>Attribution:</strong> Lensfun database contributors and Tom Niemann for the original open-source PTLens database.<br><strong>License:</strong> Creative Commons Attribution-ShareAlike 3.0 Unported.</p>
+                <p>Celvion Stack converts Lensfun database-version-2 XML into deterministic JSON, preserves the exact PTLens, Poly3, and Poly5 distortion models, and omits calibration categories the app does not use. The public package contains 1,563 lens definitions and 6,431 geometric-distortion samples.</p>
+              </div>
+              <div data-lang="zh">
+                <p><strong>用途：</strong>为符合条件的 RAW 与 DNG 照片提供离线镜头几何畸变校正。Celvion Stack 仅在能够匹配相机与镜头配置时使用数据库，并避免对已处理的 JPEG 或 HEIF 照片自动重复校正。</p>
+                <p><strong>来源项目：</strong><a class="inline-link" href="https://github.com/lensfun/lensfun" target="_blank" rel="noopener">Lensfun</a><br><strong>来源版本：</strong><a class="inline-link" href="https://github.com/lensfun/lensfun/commit/5bfb8d8cb151a3a4068219cfc798f63d0641ff19" target="_blank" rel="noopener"><code>5bfb8d8</code></a><br><strong>署名：</strong>Lensfun 数据库贡献者，以及原始开源 PTLens 数据库作者 Tom Niemann。<br><strong>许可证：</strong>知识共享 署名—相同方式共享 3.0 未本地化版本。</p>
+                <p>Celvion Stack 将 Lensfun database-version-2 XML 转换为确定性的 JSON，保留原始 PTLens、Poly3 与 Poly5 畸变模型，并省略 App 不使用的校准类别。公开数据包包含 1,563 个镜头定义和 6,431 条几何畸变样本。</p>
+              </div>
+              <p><a class="inline-link" href="https://github.com/guogxy/CelvionStack-LensProfiles" target="_blank" rel="noopener"><span data-lang="en">Open public data package</span><span data-lang="zh">打开公开数据包</span></a> · <a class="inline-link" href="legal/LENSFUN_NOTICE.md" target="_blank" rel="noopener"><span data-lang="en">Open attribution and modification notice</span><span data-lang="zh">打开署名与修改说明</span></a> · <a class="inline-link" href="legal/LENSFUN_LICENSE.txt" target="_blank" rel="noopener"><span data-lang="en">Open full license text</span><span data-lang="zh">打开许可证全文</span></a></p>
+            </div>
+          </details>
+
+          <details class="license-item">
             <summary><span class="license-summary"><span>NAFNet-SIDD Core ML Models</span><span class="license-badge">MIT + Apache-2.0 notices</span></span></summary>
             <div class="license-body">
               <div data-lang="en">

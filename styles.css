@@ -499,6 +499,12 @@ html[data-language="zh"] [data-lang="en"] {
   border-radius: var(--radius-lg);
 }
 
+.license-banner {
+  background:
+    radial-gradient(circle at 86% 22%, rgba(106, 212, 229, 0.13), transparent 30%),
+    linear-gradient(135deg, rgba(62, 90, 112, 0.2), rgba(20, 19, 17, 0.96) 50%);
+}
+
 .privacy-banner h2 {
   margin: 0 0 18px;
   font-size: clamp(2.2rem, 4.4vw, 4.4rem);
