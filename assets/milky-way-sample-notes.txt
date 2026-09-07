@@ -1,0 +1,34 @@
+CELVION STACK — REAL MILKY WAY SAMPLE
+
+This example uses developer-owned Sony RAW photographs, not generated imagery.
+Reference frame: _DSC7605.ARW.
+Stack: the recorded six-frame app result, 06-final-regression.png.
+Presentation created: August 2026.
+
+The before/after graphic and silent video use crops, labels, gradients and
+presentation resizing. No generated stars, replaced sky or additional
+promotional denoising was added. This is a recorded sample, not a benchmark
+of the current release on every supported device.
+
+Presentation dimensions: 1080 x 1350 pixels.
+Video: 15 seconds, 15 fps, H.264, no audio.
+The 225 video frames are animation frames, NOT the number of RAW exposures.
+The video duration is NOT the app's processing time.
+Presentation dimensions are NOT source RAW or full-resolution export dimensions.
+This example is not a pixel-matched laboratory measurement: source rendering,
+star/foreground alignment and presentation resizing can affect the comparison.
+No numerical noise-reduction or detail-retention claim is made.
+
+SHA-256 (unchanged presentation assets):
+milky-way-real-comparison.png
+18beda80c9228e7da8626454421806ec344358ca69d1c4ff56457c34f8e552fd
+milky-way-15s.mp4
+4398b070d1f9098940b84c183dbea8977298c7bb576f2096237682ed459c2fec
+
+中文说明
+样片来自开发者实际拍摄的 Sony RAW 序列；参考帧为 _DSC7605.ARW，
+结果为已留存的六帧 App 堆栈。展示素材制作于 2026 年 8 月。
+仅作裁切、标注、渐变和展示缩放，没有生成星点、替换天空或额外宣传降噪。
+1080 x 1350 是展示尺寸，不是 RAW 原片或满分辨率导出的尺寸。
+15 秒是演示长度，不是处理耗时；225 是视频动画帧数，不是 RAW 数量。
+这不是严格像素匹配的实验测量，不宣称数值化的降噪倍率或细节保留率。
